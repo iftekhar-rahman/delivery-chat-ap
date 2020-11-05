@@ -1,0 +1,189 @@
+/* Profile widget ( Big ) */ 
+
+.profile-widget{
+    &--active{
+        .profile-widget-image{
+            &:after{
+                background:#0BB783 ;
+                border: 2px solid #fff;
+                position: absolute;
+            }
+            
+        }
+    }
+    &-image{
+        position: relative;
+        margin-right: 25px;
+        img{
+            min-width: 48px;
+        max-width: 48px;
+        border-radius: 500px;
+        }
+        &:after{
+            content: "";
+            height: 15px;
+            width: 15px;
+            border-radius: 500px;
+            background: #606060;
+            border: 2px solid #fff;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .profile-widget-small & {
+            margin-right: 20px;
+        }
+    }
+    &--texts{
+     &-name{
+         font-size: 24px;
+         color: #606060;
+         margin-bottom: 12px;
+         font-weight: 400;
+         margin-bottom: 0;
+     }   
+     &-date{
+         font-size: 14px;
+         color: #A0A0A0;
+         padding-left: 15px;
+         margin-top: 3px;
+     }  
+     &-position{
+         margin-top:5px ;
+     } 
+     .profile-widget-small & {
+        
+        &-name{
+            font-size: 16px;
+            color: #606060;
+            margin-bottom: 12px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }   
+        &-date{
+            font-size: 14px;
+            color: #A0A0A0;
+            padding-left: 15px;
+            margin-top: 3px;
+        }  
+        &-position{
+            font-size: 14px;
+            color: #606060;
+        } 
+        &-replay{
+            font-size: 14px;
+            color:#A0A0A0;
+            margin-top:5px ;
+        } 
+     }
+    }
+    .noti-circle{
+        min-width: 28px;
+        max-height: 28px;
+        max-width: 28px;
+        min-height: 28px;
+        border-radius: 500px;
+        background: #0BB783 ;
+        display: inline-flex;
+        align-items:center;
+        justify-content: center;
+        color: #fff;
+    }
+.star-icon{
+    color:#A0A0A0;
+    font-size: 17px;
+}
+
+.inner-widget{
+    .right-side{
+        margin-left: 2px;
+        span{
+            margin-left:10px;
+        }
+    }
+}
+
+}
+
+
+
+.setting-widget-dropdown.dropdown{
+    .dropdown-menu{
+        min-width: 348px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 13px;
+        padding-top: 16px;
+        top: -10px!important;
+        right: -60%!important;
+        left: auto!important;
+    }
+    .setting-drop-title{
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .reply-default-option{
+        margin-bottom: 7px;
+        >input:checked + label{
+            color: #0BB783;
+            i{
+                background: #0BB783;
+              
+            }
+        }
+        label{
+            &:before{
+                display: none;
+            }
+            span{
+                font-weight: 700;
+            }
+            i{
+                min-width: 24px;
+                max-width: 24px;
+                min-height: 24px;
+                max-height: 24px;
+                border-radius: 500px;
+                background: #C9C9C9;
+                color: #fff;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+            }
+        }
+    }
+    .setting-drop-para{
+        font-size: 14px;
+        color: #606060;
+    }
+}
+
+.availability-dot{
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    border-radius: 500px;
+    &-15{
+        border-radius: 500px;
+        min-width: 15px;
+        min-height: 15px;
+        max-width: 15px;
+        max-height: 15px;
+    }
+}
+
+.online-active{
+    background: #0BB783;
+}
+.offline-active{
+    background:#FBB03B;
+}
+.break-active{
+    background:#606060;
+}
+
+.mr-10{
+    margin-right: 10px;
+}

@@ -1,0 +1,51 @@
+.header-search-viewBox{
+    position: relative;
+    .form-control{
+        padding-left: 37px;
+    }
+    button{
+        font-size: 18px;
+        color: $niagara;
+        position: absolute;
+        height: 100%;
+        padding: 0 5px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.replay-form{
+    display: flex;
+    justify-content: center;
+    .attach-btn{
+        margin-top: 13px;
+        margin-right: 15px;
+    }
+    .reply-text-field{
+        min-width: calc(100% - 230px);
+        position: relative;
+        .form-control{
+            height: 54px;
+            border-radius:3.89px ;
+            border: 1px solid #E0E0E0;
+        }
+        .replay-widgets{
+            position: absolute;
+            bottom: 13px;
+            right: 0;
+            .single-widget{
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+    .replay-submit-btn{
+        height: 54px;
+        min-width: 142px;
+        background: #E0E0E0;
+        color:#7C7C7C;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+}

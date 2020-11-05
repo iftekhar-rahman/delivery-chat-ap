@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Chat</title>
+        
+        <!--Libraries-->
+        <link href="./fonts/typo-fonts/fonts.css" rel="stylesheet">
+        <link href="scss/vendor.css" rel="stylesheet">
+
+        <!--Plugins-->
+       
+
+        <!--Theme specific styles-->
+        <link href="scss/main.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="site-wrap">
+            <!-- header starts -->
+            <div class="chat-header">
+                <div class="container-fluid d-flex flex-wrap">
+                  <div class="header-search-viewBox header-left-box">
+                    <form action="" class="position-relative">
+                        <input type="text" class="form-control" placeholder="Search contact">
+                        <button class="fa fa-search btn-reset"></button>
+                    </form>
+                  </div>
+                  <div class="header-right-box">
+                    <div class="header-right-inner d-flex justify-content-between align-items-center">
+                        <div class="media profile-widget profile-widget--active align-items-center">
+                            <div class="profile-widget-image">
+                                <img src="./img/profile-blank.png" alt="">
+                            </div>
+                            <div class="profile-widget-texts">
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                    <span class="profile-widget--texts-date">08:30 PM  (GMT +5:30)</span>
+                                </div>
+                                <p class="profile-widget--texts-position">Website and logo design</p>
+                            </div>
+                        </div>
+                        <!-- Header Right Search -->
+                        <div class="header-search-viewBox d-none d-xl-block">
+                            <form action="" class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search contact">
+                                <button class="fa fa-search btn-reset"></button>
+                            </form>
+                        </div>
+                        <!-- Header Option -->
+                        <div class="header-option dropdown dropleft">
+                        <button class="dropdown-trigger btn-reset" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ...
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                <i class="fa fa-file mr-20"></i>
+                                <span class="d-inline-block font-weight-bold">Media, Files & Links</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#"><div class="d-flex align-items-center">
+                                <i class="fa fa-ban mr-20"></i>
+                                <span class="d-inline-block font-weight-bold">Block this user</span>
+                            </div></a>
+                            <a class="dropdown-item" href="#"><div class="d-flex align-items-center">
+                                <i class="fa fa-eye-slash mr-20"></i>
+                                <span class="d-inline-block font-weight-bold">Hide Contact</span>
+                            </div></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- header ends -->
+            <!-- main-content starts -->
+            <div class="chat-body">
+                <div class="chat-body--inner">
+                    <div class="chat-body--inner-left-sidebar">
+                        <div class="chat-widget-list">
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-widget">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="inner-widget d-flex justify-content-between">
+                                            <div class="left-side">
+                                                <p class="profile-widget--texts-position mb-0 line-height-reset">Website and logo design</p>
+                                                <p class="profile-widget--texts-replay mb-0 line-height-reset">You: Okay adding you</p>
+                                            </div>
+                                            <div class="right-side line-height-reset d-flex align-items-center">
+                                                <span class="noti-circle">
+                                                    30
+                                                </span>
+                                                <span class="fa fa-star-o star-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-body--inner-right-sidebar">
+                        <div class="chat-body-right-upper">
+                            <div class="single-chat-message">
+                                <div class="media profile-widget profile-widget-small profile-widget--active">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <p class="chat-text">
+                                            Please let me ans Your Question. <br>
+                                            1.Company name is Marathon Electric India Pvt Ltd Its a subsidiary company of Regal Beloit.<br>
+                                            2. Yes We have , But for this project No need to any Specific Design Guideline<br>
+                                            3. Our MaiN competitors for this project is Havells, Bluestar, Voltas, Kenstar<br>
+                                            4.For more Info You can visit our website www.regalbeloit.com<br>
+                                            5.No specific Color required. But Design Should be simple & Attractive<br>
+                                            6. In Logo Basically One Title is required only.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-chat-message replay">
+                                <div class="media profile-widget profile-widget-small profile-widget--active">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <div class="replay-chat-bottom">
+                                           <div class="chat-texts">
+                                            <p class="chat-text">
+                                                please let me know if you have any other question ?
+                                            </p>
+                                            <a href="#" class="edit-status">(Edited)
+
+                                                <div class="dialouge-box">
+                                                    <p>Edited on Wednesday, <br>
+                                                        November 4, 2020 12:38 AM</p>
+                                                        <button class="dissmiss btn-reset">
+                                                            X
+                                                        </button>
+                                                </div>
+                                            </a>
+                                           </div>
+    
+                                            <div href="#" class="replay-dropdown dropdown dropleft">
+                                                <button class="dropdown-trigger btn-reset" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="./img/settings.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="d-flex align-items-center">
+                                                        <i class="fa fa-trash mr-20"></i>
+                                                        <span class="d-inline-block font-weight-bold">Delete</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="d-flex align-items-center">
+                                                        <i class="fa fa-pencil mr-20"></i>
+                                                        <span class="d-inline-block font-weight-bold">Edit</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="d-flex align-items-center">
+                                                        <i class="fa fa-quote-left mr-20"></i>
+                                                        <span class="d-inline-block font-weight-bold">Quote</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-chat-message">
+                                <div class="media profile-widget profile-widget-small profile-widget--active">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <p class="chat-text">
+                                            Please let me ans Your Question. <br>
+                                            1.Company name is Marathon Electric India Pvt Ltd Its a subsidiary company of Regal Beloit.<br>
+                                            2. Yes We have , But for this project No need to any Specific Design Guideline<br>
+                                            3. Our MaiN competitors for this project is Havells, Bluestar, Voltas, Kenstar<br>
+                                            4.For more Info You can visit our website www.regalbeloit.com<br>
+                                            5.No specific Color required. But Design Should be simple & Attractive<br>
+                                            6. In Logo Basically One Title is required only.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-chat-message">
+                                <div class="media profile-widget profile-widget-small profile-widget--active">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <span class="profile-widget--texts-date">08:30 PM</span>
+                                        </div>
+                                        <p class="chat-text">
+                                            please let me know if you have any other question ?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-body-right-lower ">
+                            <form action="" class="d-flex replay-form">
+                                <a href="" class="attach-btn"><img src="./img/attach-icon.png" alt=""></a>
+                               <div class="reply-text-field">
+                                <textarea name="" id="" class="form-control"></textarea>
+                                <div class="replay-widgets">
+                                    <a href="#" class="single-widget setting-widget-dropdown  dropdown dropright dropup">
+                                        <button class="dropdown-trigger btn-reset" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./img/settings.png" alt="">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <h4 class="setting-drop-title">Pressing Enter Key will:</h4>
+                                        <div class="reply-default-option">
+                                            <input type="radio" class="sr-only" id="dm" name="reply-radio">
+                                            <label for="dm"><i class="fa fa-check"></i> <span>Send a Message</span></label>
+                                        </div>
+                                        <div class="reply-default-option">
+                                            <input type="radio" class="sr-only" id="br" name="reply-radio">
+                                            <label for="br"><i class="fa fa-check"></i> <span>Add a line break</span></label>
+                                        </div>
+                                        <p class="setting-drop-para">You can always use Shift+Enter or Ctrl+Enter to
+                                            type multi-line messages.</p>
+                                    </div>
+                                    </a>
+                                    <a href="#" class="single-widget"><img src="./img/emoji.png" alt=""></a>
+                                </div>  
+                               </div>
+                               <button class="replay-submit-btn btn-reset">
+                                   Send
+                               </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- main-content ends -->
+            <!-- footer-section starts -->
+            <div class="chat-footer">
+                <div class="left-side">
+                    <div class="user-online-footer">
+                        <div href="#" class="replay-dropdown dropdown dropup">
+                            <button class="dropdown-trigger btn-reset" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                    <div class="profile-widget-image">
+                                        <img src="./img/profile-blank.png" alt="">
+                                    </div>
+                                    <div class="profile-widget-texts">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <h3 class="profile-widget--texts-name">Apurba Das</h3>
+                                            <i class="fa fa-chevron-up ml-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                    <i class="fa fa-trash mr-20"></i>
+                                    <span class="d-inline-block font-weight-bold">Delete</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                    <i class="fa fa-pencil mr-20"></i>
+                                    <span class="d-inline-block font-weight-bold">Edit</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                    <i class="fa fa-quote-left mr-20"></i>
+                                    <span class="d-inline-block font-weight-bold">Quote</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div href="#" class="footer-online-status dropup dropleft">
+                        <button class="dropdown-trigger btn-reset" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="media profile-widget profile-widget-small profile-widget--active align-items-center">
+                                <div class="availability-dot online-active mr-10"></div>
+                                <div class="profile-widget-texts">
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                        <h3 class="profile-widget--texts-name">Online</h3>
+                                        <i class="fa fa-chevron-up ml-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="availability-dot-15 online-active mr-10"></div>
+                                <span class="d-inline-block font-weight-bold">Online</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="availability-dot-15 offline-active mr-10"></div>
+                                <span class="d-inline-block font-weight-bold">Offline</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="availability-dot-15 break-active mr-10"></div>
+                                <span class="d-inline-block font-weight-bold">Taking Break</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-section ends -->
+        </div>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+     
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
